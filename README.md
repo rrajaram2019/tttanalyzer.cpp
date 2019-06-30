@@ -8,25 +8,21 @@ char tttresult(string tttboard);
 The string tttboard has nine characters representing the current situation in a game of tic tac toe:
 
 x represents x
-
 o represents o
-
-hashtag represents an unplayed space
-
+# represents an unplayed space
 The first three characters are the top row, the next three the middle row, and the last three are the bottom row.
 
 So the line:
 
 xox#x#xox
-represents the board
+represents the board: 
 
- x |  o  |  x  
-   |     |      
----+-----+-----
-   |  x  |
----+-----+----- 
-   |     |  
- x |  o  |  x
+ROW 1: x,o,x
+
+ROW 2: (space), x, (space)
+
+ROW 3: x,o,x
+
 The program should classify the board as one of the following:
 
 t: tie game and no spaces left
@@ -122,18 +118,3 @@ except that the numbers should be the real numbers calculated by analyzing all t
 The order is irrelevant: you can print out the table in any order.
 
 You should use get_all_boards and tttresult to generate the tally.
-
-Your program must contain the line
-
-// MAIN
-just before your declaration of main() so that I can properly check it.
-
-3.5 Restrictions
-You may include the following libraries but no others:
-
-<iostream>
-<string>
-<array>
-<vector>
-<map>
-"movedef.h"
