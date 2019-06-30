@@ -8,8 +8,11 @@ char tttresult(string tttboard);
 The string tttboard has nine characters representing the current situation in a game of tic tac toe:
 
 x represents x
+
 o represents o
-# represents an unplayed space
+
+hashtag represents an unplayed space
+
 The first three characters are the top row, the next three the middle row, and the last three are the bottom row.
 
 So the line:
